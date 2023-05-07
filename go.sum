@@ -17,6 +17,8 @@ github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/hashicorp/cdktf-provider-aws-go/aws/v9 v9.0.52 h1:m68rz51Glwx7ui3mMLrn+uc1Dn/KiHEZr16kBv7SQEg=
 github.com/hashicorp/cdktf-provider-aws-go/aws/v9 v9.0.52/go.mod h1:bAGs5NoNTXWGmq2mcaTWXXfWpmPOaitZkbq8Q5ZDx2M=
+github.com/hashicorp/terraform-cdk v0.16.0 h1:a0/8GQLvz8SowcffW3Qd6pYorlLp229RV/RLlVbvBrY=
+github.com/hashicorp/terraform-cdk v0.16.0/go.mod h1:4v0vuWMyYtAFmWFqvGhUXx/jHfLVT7hAHyN4YjfJ9Vk=
 github.com/hashicorp/terraform-cdk-go/cdktf v0.12.2 h1:OoxUHu52l2NXYNbAdr1+6sy974lJLd0G6F1mU/kCIKE=
 github.com/hashicorp/terraform-cdk-go/cdktf v0.12.2/go.mod h1:uQ6x3sUciytdlq0CxLmvSPEgD21SBRrCZisBS396388=
 github.com/hashicorp/terraform-cdk-go/cdktf v0.12.3 h1:H86ePgi+XYsfgFq5xCqVE8MpRkMA4UJvLPzRNzMInL8=
