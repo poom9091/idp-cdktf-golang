@@ -16,7 +16,7 @@ type ConfigStack struct {
 	Cluster     string
 }
 
-func ECS_service(scope constructs.Construct, id string, config ConfigStack) cdktf.TerraformStack {
+func NewService(scope constructs.Construct, id string, config ConfigStack) cdktf.TerraformStack {
 	stack := cdktf.NewTerraformStack(scope, &id)
 	aws.NewAwsProvider(stack, jsii.String("provider"), provider.Account)
 	assumeRolePolicyJson := `

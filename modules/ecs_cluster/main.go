@@ -17,7 +17,7 @@ type output struct {
 	ClusterName string
 }
 
-func ECS_Cluster(scope constructs.Construct, id string, config ConfigStack) (cdktf.TerraformStack, output) {
+func NewCluster(scope constructs.Construct, id string, config ConfigStack) output {
 	stack := cdktf.NewTerraformStack(scope, &id)
 	aws.NewAwsProvider(stack, jsii.String("provider"), provider.Account)
 	cluster := ecs.NewEcsCluster(stack, jsii.String("ecs_cluster"), &ecs.EcsClusterConfig{
@@ -28,5 +28,5 @@ func ECS_Cluster(scope constructs.Construct, id string, config ConfigStack) (cdk
 	// 	Value: cluster.Name(),
 	// })
 
-	return stack, output{*cluster.Name()}
+	return output{*cluster.Name()}
 }
