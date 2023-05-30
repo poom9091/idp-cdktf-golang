@@ -1,0 +1,18 @@
+version: '3' 
+
+silent: true
+
+tasks:
+  build: 
+    desc: Build  Application
+    cmds:
+      -  env GOARCH=amd64 GOOS=linux go build -ldflags="-s -w" -o bin/lambda cmd/lambda/main.go
+  clean: 
+    cmds:
+      - rm -rf ./bin
+  deploy:
+    cmds:
+      - task: clean 
+      - task: build 
+      - sls deploy {{.CLI_ARGS}} 
+    

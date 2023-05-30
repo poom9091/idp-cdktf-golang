@@ -10,6 +10,18 @@ import (
 
 func main() {
 	app := cdktf.NewApp(nil)
+	// r := gin.Default()
+	// r.GET("/vpc", func(c *gin.Context) {
+	// 	out, err := exec.Command("cdktf", "apply", "--auto-approve", "vpc").Output()
+	// 	if err != nil {
+	// 		panic("Created vpc error: " + err.Error())
+	// 	}
+	// 	fmt.Println(out)
+	// 	c.JSON(http.StatusOK, gin.H{
+	// 		"message": "vpc created",
+	// 	})
+	// })
+	// r.Run()
 
 	vpcOutput := vpc.NewVPC(app, "vpc")
 
